@@ -1,0 +1,21 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body style = "background-color:lightblue">
+
+<h1 align="center">Potato Plant Disease Detection </h1>
+<div align="center">
+<h4>Input Image</h4>
+<img src="{{url_for('static', filename=image)}}" height="500px" width = "500px" />
+<h4> Early Blight Percentage :- {{a0}} </h4>
+<h4> Late Blight Percentage :- {{a1}} </h4>
+<h4> Healthy_Leaves Percentage :- {{a2}} </h4>
+<form action = "http://localhost:5000/try" method = "post">
+<input style="margin-left:10%;font-size:25px" type = "submit" value = "Try Another Image" />
+</form>
+</div>
+</body>
+</html> 
